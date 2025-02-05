@@ -1,0 +1,21 @@
+CREATE DATABASE test;
+GO
+
+USE test;
+GO
+
+CREATE TABLE Cliente (
+    id INT IDENTITY(1,1) PRIMARY KEY,
+    nombre NVARCHAR(100) NOT NULL,
+    telefono NVARCHAR(20) NOT NULL,
+    pais NVARCHAR(50) NOT NULL
+);
+GO
+
+CREATE PROCEDURE getClientes
+AS
+BEGIN
+    SET NOCOUNT ON;
+    SELECT * FROM Cliente
+    ORDER BY id;
+END;

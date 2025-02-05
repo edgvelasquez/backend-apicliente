@@ -1,0 +1,6 @@
+/apiCliente/bin
+/apiCliente/obj
+.vs/
+.vscode/
+/apiCliente/TestResults
+.idea/
